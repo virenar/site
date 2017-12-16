@@ -1,0 +1,271 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Viren R. Amin, Bioinformatics Scientist</title>
+	<meta name="google-site-verification" content="_icP2W3B6y_gFG92Dh-caUWIh_sEnE4tPu8pghzaH2w" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+	  $("a").on('click', function(event) {
+	    if (this.hash !== "") {
+	      event.preventDefault();
+
+	      var hash = this.hash;
+
+	      $('html, body').animate({
+	        scrollTop: $(hash).offset().top
+	      }, 500, function(){
+	        window.location.hash = hash;
+	      });
+	    }
+	  });
+	});
+	</script>
+</head>
+
+<body>
+  <div class="banner">
+    <div id="header">
+      <div id="name">
+        Viren R. Amin
+      </div>
+      <div id="navigator">
+        <div class="nav_cell"><a class="nav" href="#about">about</a></div>
+        <div class="nav_cell"><a class="nav" href="#research">research</a></div>
+        <div class="nav_cell"><a class="nav" href="#experience">experience</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="main">
+
+    <div class="content">
+      <a class="anchor" id="about"></a>
+      <div class="introduction">
+        <div id="selfie">
+          <img src="images/selfie.jpg" /><br>
+          <div style="text-align: center; margin-top: 10px; font-size: 14px; font-family: monospace;">amin.viren [at] google [dot] com</div>
+        </div>
+        <div class="right">
+        <p>I am a Bioinformatics Postdoctoral Fellow at the <a class="link" href="http://www.utsouthwestern.edu/departments/bioinformatics/" target="_blank">Lynda Hill Department of Bioinformatics</a> at <a class="link" href="http://www.utsouthwestern.edu/" target="_blank">UT Southwestern Medical Center (UTSW)</a>. Before coming to UTSW, I did my Ph.D. in Human Genetics with a focus in Computational Biology under the supervision of Professor <a class="link" href="https://www.bcm.edu/people/view/aleksandar-milosavljevic-ph-d/last-names-l-n/b15965fe-ffed-11e2-be68-080027880ca6/ddefb138-3826-11e3-9de7-005056b104be" target="_blank">Aleksander Milosavaljevic</a>. I also have a Master's degree in Molecular and Cell Biology from the <a class="link" href="http://www.utdallas.edu/" target="_blank"> University of Texas at Dallas </a> and Bachelor's degree in Biochemistry from <a class="link" href="https://newbrunswick.rutgers.edu/" target="_blank">Rutgers University</a>.
+        </p>
+        <p>I am currently working with <a class="link" href="http://www.utsouthwestern.edu/labs/cobanoglu/meet/" target="_blank">Murat Can Cobanoglu</a> on developing novel computational tools in differential regulation inference and cell/tissue-specific regulatory network construction. My research experience spans a wide range of topics, including, gene regulation, computational drug discovery methods, developing analysis pipelines for high-throughput sequencing data, and novel tools for data visualization.
+      </div>
+    </div>
+
+
+    <hr>
+
+    <div class="content">
+      <div class="title">Research</div>
+      <a class="anchor" id="research"></a>
+
+      <div class="subtitle">Computational methods</div>
+
+      <div class="block">
+        <div class="abstract">
+          <img class="project_img" src="images/TF_inference.png">
+          <div class="right">
+            <div class="research_title">
+              Inferring activity of transcription factors from transcriptomic data
+            </div>
+            <p>
+            Cancer is a complex disease, and modern sequencing methods offer the potential to unravel that complexity. We work on the problem of understanding the regulators and their downstream targets involved in maintaining or driving the cancer pathology. To uncover the transcriptional dysregulation in cancer, we developed a computational model that takes transcriptomic data and learns differentially regulated genes, as well as potential regulators, based on cell/tissue-specific context. Specifically, we integrate context specific regulatory networks generated across 1000 of cell/tissues types to precondition the model and infer a regulatory network for a given condition using transcriptomic data. We applied our method on the cancer types profiled in TCGA. We show that our method recovers several well-known regulators and identifies potential novel regulators involved in cancer progression.
+
+            </p>
+          </div>
+        </div>
+        <div class="publication">
+			  <span class="emph">V. Amin</span>, M.C. Cobanoglu (2017)<br>
+			  Identifying potential therapeutic targets using differential regulation analysis.<br>
+			  <i>In preparation</i><br>
+        </div>
+      </div>
+
+
+      <div class="block">
+        <div class="abstract">
+          <img class="project_img" src="images/network4.png">
+          <div class="right">
+            <div class="research_title">
+            TAD aware regulatory network construction
+            </div>
+          	<p>
+            Different groups have started acquiring both transcriptomic and epigenomic datasets to understand gene regulation during cellular differentiation or disease progression. However, integration of epigenomic and transcriptomic datasets are typically done in an ad-hoc manner. Also, there exists no tools or resources that uniformly processed existing epigenomic and transcriptomic datasets. Therefore, we developed a method that integrates epigenomic and transcriptomic data to construct cell/tissue-specific TF-gene regulatory networks. The method takes into account of the topologically associated domains (TAD), evolutionary conservation, and well-curated transcription factor recognition motifs to construct the networks. We applied our method on mouse ENCODE dataset and showed that our method can group cell/tissue-specific regulatory networks based on their cell type of origin and determine novel regulatory interactions that are biologically relevant.
+          	</p>
+
+          </div>
+        </div>
+        <div class="publication">
+        <span class="emph">V. Amin</span>, V. Malladi, M.C. Cobanoglu (2017)<br>
+			    Integrate epigenomic and transcriptomic datasets to construct TAD aware regulatory networks.<br>
+			    <i>In preparation</i><br>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="abstract">
+          <img class="project_img" src="images/drug_discovery5-01.png">
+          <div class="right">
+            <div class="research_title">
+              Ligand based computational drug discovery
+            </div>
+          	<p>
+            The current approach of finding active compounds is through screening large chemical library on a given target. However, the brute force approach takes time, resources, and do not learn from prior experiments. To overcome the problem, we can use machine learning to learn chemical features from previous experiments that responded to the target. Then we can either explore or exploit the chemical space to find a new set of compounds to test experimentally. Such approach of actively selecting compounds based on results of prior experiments can drastically reduce time and resources to search an active compound. I implemented simple active learning routine that picks compounds with a high chance of responding to the target (<a class="link" href="https://github.com/virenar/active_screening" target="_blank">code</a>).
+          	</p>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="block">
+        <div class="abstract">
+          <img class="project_img" src="images/roadmap7.png">
+          <div class="right">
+            <div class="research_title">
+              Integrative analysis of 111 reference human epigenomes
+            </div>
+          <p>
+            The reference human genome sequence set the stage for studies of genetic variation and its association with human disease, but epigenomic studies lack a similar reference. To address this need, the NIH Roadmap Epigenomics Consortium generated the largest collection so far of human epigenomes for primary cells and tissues. Here we describe the integrative analysis of 111 reference human epigenomes generated as part of the programme, profiled for histone modification patterns, DNA accessibility, DNA methylation and RNA expression. We establish global maps of regulatory elements, define regulatory modules of coordinated activity, and their likely activators and repressors. We show that disease- and trait-associated genetic variants are enriched in tissue-specific epigenomic marks, revealing biologically relevant cell types for diverse human traits, and providing a resource for interpreting the molecular basis of human disease. Our results demonstrate the central role of epigenomic information for understanding gene regulation, cellular differentiation and human disease.
+          	</p>
+          </div>
+        </div>
+
+        <div class="publication">
+			    Roadmap Epigenomics Consortium et. al. (2015)<br>
+          Integrative analysis of 111 reference human epigenomes.<br>
+			    <i>Nature</i>, 518:317-330.<br>
+          <span class="emph"> Integrative analysis leads (equal contributors) </span> <br>
+          A. Yen, A.H. Moussavi, P. Kheradpour, Z. Zhang, J. Wang, M.J. Ziller, <span class="emph"> V. Amin </span>, J.W. Whitaker, M.D. Schultz, L.D. Ward, A. Sarkar, G. Quon, R.S. Sandstrom, M.L. Eaton, Y.C. Wu, A. Pfenning, X. Wang & M. Claussnitzer<br>
+			    (<a class="link" href="https://www.nature.com/articles/nature14248" target="_blank">aticle</a>)
+        </div>
+      </div>
+
+
+      <div class="block">
+        <div class="abstract">
+          <img class="project_img" src="images/ec14.png">
+          <div class="right">
+            <div class="research_title">
+              Tissue-specific epigenetic regulation of lncRNAs
+            </div>
+          	<p>
+          	Tissue-specific expression of lincRNAs suggests developmental and cell-type-specific functions, yet tissue specificity was established for only a small fraction of lincRNAs. Here, by analysing 111 reference epigenomes from the NIH Roadmap Epigenomics project, we determine tissue-specific epigenetic regulation for 3,753 (69% examined) lincRNAs, with 54% active in one of the 14 cell/tissue clusters and an additional 15% in two or three clusters. A larger fraction of lincRNA TSSs is marked in a tissue-specific manner by H3K4me1 than by H3K4me3. The tissue-specific lincRNAs are strongly linked to tissue-specific pathways and undergo distinct chromatin state transitions during cellular differentiation. Polycomb-regulated lincRNAs reside in the bivalent state in embryonic stem cells and many of them undergo H3K27me3-mediated silencing at early stages of differentiation. The exquisitely tissue-specific epigenetic regulation of lincRNAs and the assignment of a majority of them to specific tissue types will inform future studies of this newly discovered class of genes.
+          	</p>
+          </div>
+        </div>
+        <div class="publication">
+			    <span class="emph"> V. Amin </span>, R.A. Harris, V. Onuchic, A.R. Jackson, T. Charnecki, S. Paithankar, S.L. Subramanian, K. Riehle, C. Coarfa & A. Milosavljevic.<br>
+			    Epigenomic footprints across 111 reference epigenomes reveal tissue-specific epigenetic regulation of lincRNAs.
+          <br>
+			    <i>Nature Communications</i>, 6 (2015).<br>
+			    (<a class="link" href="https://www.nature.com/articles/ncomms7370" target="_blank">article</a>)
+        </div>
+      </div>
+
+      <div class="subtitle">Web Applications</div>
+
+      <div class="block">
+        <div class="abstract">
+            <div class="application_title">
+            Genboree Epigenome Toolset
+            </div>
+            <p>
+            Created an online suite of tools to conduct epigenomic analyses. I tested, developed, and imporved analysis pipelines using internal or external developed softwares. Also, closely interacted with the developers to integrate analysis pipelines or data visualization methods in creating the <a class="link" href="http://genboree.org/site/epigenomics_toolset" target="_blank">Epigenome Toolset</a> hosted in <a class="link" href="http://genboree.org/site/" target="_blank">Genboree Workbench</a>.
+            </p>
+
+        </div>
+      </div>
+
+      </div>
+
+
+      <div class="block">
+        <div class="abstract">
+            <div class="application_title">
+            ViSTran: Visualizing chromatin state transitions during differentiation
+            </div>
+            <p>
+            Using AngularJS and d3.js, I developed a data visualization tool that helps visualize the chromatin state transitions between samples. (<a class="link" href="https://htmlpreview.github.io/?https://github.com/virenar/ViSTran/blob/master/bipartite/index.html" target="_blank">Interative Tool</a> with static dataset)
+            </p>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+    <div class="content">
+      <div class="title">Experience</div>
+      <a class="anchor" id="experience"></a>
+      <div class="subtitle">Bioinformatics Research</div>
+      <ul>
+			  <li>
+			  Bioinformatics Postdoctral Fellow @ UTSW, Dallas, TX, June 2016 - Present
+			  <br>
+      	</li>
+			  <li>
+			  Bioinformatics Research Assistant @ Baylor College of Medicine, Houston, TX, March 2012 - June 2016
+			  </li>
+
+      </ul>
+
+      <div class="subtitle">Experimental Research</div>
+      <ul>
+        <li>
+        Research Assistant @ UTSW, Dallas, TX, Oct 2008 - June 2011
+        <br>
+        </li>
+
+      </ul>
+
+	    <div class="subtitle">Teaching Assistant/Workshop Organizer</div>
+
+      <ul>
+			  <li>(2016-2017 Summer) One Day R Bootcamp @ UTSW, Dallas, TX</li>
+			  <li>(2012-2016 Spring) Computer-aided discovery methods @ Baylor College of Medicine, Houston, TX</li>
+        <li>(2013 Fall) Epigenome Informatics Workshop @ ASHG, Boston, MA</li>
+        <li>(2012-2013 Spring) Epigenome Informatics Workshop @ Houston, TX</li>
+        <li>(2010 Spring and Summer) Biochemistry Laboratory @ UTD, Dallas, TX</li>
+
+
+      </ul>
+
+
+
+
+    </div>
+
+
+    </div>
+  </div>
+  <div style="margin-top: 10px; text-align: center; font-size: 14px;">
+  Last Updated: Dec 16, 2017
+  </div>
+
+	<!-- Start of StatCounter Code for Default Guide -->
+	<script type="text/javascript">
+		var sc_project=10595714;
+		var sc_invisible=1;
+		var sc_security="ee39bc4f";
+		var scJsHost = (("https:" == document.location.protocol) ?
+			"https://secure." : "http://www.");
+		document.write("<sc"+"ript type='text/javascript' src='" +
+			scJsHost+
+			"statcounter.com/counter/counter.js'></"+"script>");
+	</script>
+	<noscript><div class="statcounter"><a title="shopify visitor
+		statistics" href="http://statcounter.com/shopify/"
+		target="_blank"><img class="statcounter"
+		src="http://c.statcounter.com/10595714/0/ee39bc4f/1/"
+		alt="shopify visitor statistics"></a></div></noscript>
+		<!-- End of StatCounter Code for Default Guide -->
+
+</body>
+</html>
